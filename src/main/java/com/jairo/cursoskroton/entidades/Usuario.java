@@ -1,5 +1,6 @@
 package com.jairo.cursoskroton.entidades;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 import javax.persistence.Entity;
@@ -17,6 +18,7 @@ public class Usuario implements Serializable {
     private String nome;
     private String email;
     private String telefone;
+    @JsonIgnore
     private String senha;
 
     public Usuario(){
