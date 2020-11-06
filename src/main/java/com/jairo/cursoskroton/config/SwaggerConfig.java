@@ -27,7 +27,7 @@ import static springfox.documentation.builders.PathSelectors.regex;
 public class SwaggerConfig {
 
     public static final String AUTHORIZATION_HEADER = "Authorization";
-    public static final String DEFAULT_INCLUDE_PATTERN = "/.*";
+    public static final String DEFAULT_INCLUDE_PATTERN = "/usuario.*";
     private final Logger log = LoggerFactory.getLogger(SwaggerConfig.class);
 
     @Bean
